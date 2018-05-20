@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aguascalientes</title>
+	<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+	<link rel="shortcut icon" href="../imagenes/icono.png">
+	<link rel="stylesheet" type="text/css" href="../css/estados.css">
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+</head>
+
+<script type="text/javascript">
+
+		var cal = 0;
+		var uno = 1;
+
+		function ocultar(){
+			document.getElementById("ocu").style.display="none";
+			document.getElementById("exa").style.display="block"
+		}
+		function ocultar2(){
+			document.getElementById("exa").style.display="none";
+			document.getElementById("resul").style.display="block";
+		}
+		function mostrar(){
+			location.reload();
+		}
+		function ocultar3(){
+			document.getElementById("resul").style.display="none";
+			location.reload();
+		}
+		function rojo(){
+				document.getElementById("pres").style.background="red";
+				document.getElementById("2").style.background="green";
+				document.getElementById("1").onclick="";
+				document.getElementById("2").onclick="";
+		}
+		function verde(){
+				document.getElementById("pres").style.background="green";
+				cal++;
+				document.getElementById("1").onclick="";
+				document.getElementById("2").onclick="";
+		}
+		function rojo1(){
+				document.getElementById("press").style.background="red";
+				document.getElementById("22").style.background="green";
+				document.getElementById("11").onclick="";
+				document.getElementById("22").onclick="";
+		}
+		function verde1(){
+				document.getElementById("press").style.background="green";
+				cal++;
+				document.getElementById("11").onclick="";
+				document.getElementById("22").onclick="";
+		}
+		function rojo2(){
+				document.getElementById("presss").style.background="red";
+				document.getElementById("222").style.background="green";
+				document.getElementById("111").onclick="";
+				document.getElementById("222").onclick="";
+		}
+		function verde2(){
+				document.getElementById("presss").style.background="green";
+				cal++;
+				document.getElementById("111").onclick="";
+				document.getElementById("222").onclick="";
+		}
+		function rojo3(){
+				document.getElementById("pressss").style.background="red";
+				document.getElementById("2222").style.background="green";
+				document.getElementById("1111").onclick="";
+				document.getElementById("2222").onclick="";
+		}
+		function verde3(){
+				document.getElementById("pressss").style.background="green";
+				cal++;
+				document.getElementById("1111").onclick="";
+				document.getElementById("2222").onclick="";
+		}
+		function rojo4(){
+				document.getElementById("presssss").style.background="red";
+				document.getElementById("22222").style.background="green";
+				document.getElementById("11111").onclick="";
+				document.getElementById("22222").onclick="";
+		}
+		function verde4(){
+				document.getElementById("presssss").style.background="green";
+				cal++;
+				document.getElementById("11111").onclick="";
+				document.getElementById("22222").onclick="";
+		}
+
+</script>
+
+<body>
+
+<header>
+    <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../estados.html">Estados</a></li>
+    </ul>
+</header>
+
+<center><div class="con" id="ocu">
+	<h1>Aguascalientes</h1>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118472.60376266911!2d-102.36133987007445!3d21.88571994242545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429ec143ae4d9fb%3A0x4016978679c5220!2sAguascalientes%2C+Ags.!5e0!3m2!1ses!2smx!4v1520524537460" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	<p>Es uno de los treinta y un estados que, junto con la Ciudad de México, forman los Estados Unidos Mexicanos. Colinda al norte con Zacatecas y al sur con Jalisco. Está ubicado simultáneamente en el centro geográfico del país, la región centronorte geográfica-cultural; y la macro región de El Bajío (específicamente en el Bajío Occidente).<br><br>
+	Es el cuarto estado más densamente poblado con 210.93 hab/km²; por detrás del Estado de México, Morelos y Tlaxcala. Con 1,513,544 habitantes en 2015, es el sexto menos poblado; por delante de Tlaxcala, Nayarit, Campeche, Baja California Sur y Colima. Con 5,618 km² (0.3% de la superficie del país), es el tercero menos extenso; por delante de Morelos y Tlaxcala.<br><br>
+	Nace como entidad independiente el 5 de febrero de 1857. Su nombre es debido a las aguas termales que los primeros pobladores europeos descubrieron en la zona. Se divide en 11 municipios, y su capital y ciudad más poblada es Aguascalientes.
+	</p>
+	<input type="button" value="Tomar Examen" class="boton" id="bo" onclick="ocultar()">
+</div></center>
+
+<center><div class="examen" id="exa" style="display: none;">
+	<div class="pre" id="pres">
+		<p class="pregunta">1.- ¿Cuantos habitantes tiene?</p>
+		<p class="re" id="2" onclick="verde()">1,513,544</p>
+		<p class="re" id="1" onclick="rojo()">1,513,877</p>
+		<p class="re" id="1" onclick="rojo()">2,012,157</p>
+		<p class="re" id="1" onclick="rojo()">1,13,257</p>
+	</div>
+
+	<div class="pre" id="press">
+		<p class="pregunta">2.- ¿Cuantos Municipios Tiene?</p>
+		<p class="re" id="11" onclick="rojo1()">10</p>
+		<p class="re" id="11" onclick="rojo1()">8</p>
+		<p class="re" id="22" onclick="verde1()">12</p>
+		<p class="re" id="11" onclick="rojo1()">15</p>
+	</div>
+
+	<div class="pre" id="presss">
+		<p class="pregunta">3.- ¿Que tan grande es su territorio?</p>
+		<p class="re" id="111" onclick="rojo2()">5,628 km²</p>
+		<p class="re" id="111" onclick="rojo2()">4,929 km²</p>
+		<p class="re" id="111" onclick="rojo2()">6,218 km²</p>
+		<p class="re" id="222" onclick="verde2()">5,618 km²</p>
+	</div>
+
+	<div class="pre" id="pressss">
+		<p class="pregunta">4.- ¿Estado conlindante al sur?</p>
+		<p class="re" id="1111" onclick="rojo3()">Michoacan</p>
+		<p class="re" id="2222" onclick="verde3()">Jalisco</p>
+		<p class="re" id="1111" onclick="rojo3()">Chihuahua</p>
+		<p class="re" id="1111" onclick="rojo3()">Guanajuato</p>
+	</div>
+
+	<div class="pre" id="presssss">
+		<p class="pregunta">5.- ¿Estado conlindante al norte?</p>
+		<p class="re" id="11111" onclick="rojo4()">Michoacan</p>
+		<p class="re" id="22222" onclick="verde4()">Zacatecas</p>
+		<p class="re" id="11111" onclick="rojo4()">CDMX</p>
+		<p class="re" id="11111" onclick="rojo4()">Veracruz</p>
+	</div>
+
+	<input type="button" value="Resultado" class="boton" id="bo" onclick="ocultar2()">
+	<input type="button" value="Cancelar" class="boton" id="bo" onclick="mostrar()">
+
+</div></center>
+
+<center><div class="resultado" id="resul" style="display: none;">
+	<h1>Calificación</h1>
+	<p class="g">Tu Calificación Es <script>document.write(cal)</script>/5</p>
+	<script>
+		if (cal==0){
+			document.write('<iframe src="https://giphy.com/embed/3o6wrvdHFbwBrUFenu" width="480" height="319" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>');
+		}else if (cal==5) {
+			document.write('<iframe src="https://giphy.com/embed/NXp9HM6YeuS0U" width="480" height="319" frameBorder="0" class="giphy-embed gif" allowFullScreen></iframe>');
+		}else if (cal==4) {
+			document.write('<iframe src="https://giphy.com/embed/10spcFioEOY7zG" width="480" height="319" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>')
+		}else if (cal==3) {
+			document.write('<iframe src="https://giphy.com/embed/DfdbTJZx6Yjra" width="480" height="319" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>')
+		}else if (cal==2) {
+			document.write('<iframe src="https://giphy.com/embed/TseBjMu53JgWc" width="473" height="319" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>')
+		}else if (cal==1) {
+			document.write('<iframe src="https://giphy.com/embed/ZebTmyvw85gnm" width="480" height="319" frameBorder="0" class="giphy-embed gif" allowFullScreen></iframe>')
+		}
+	</script>
+
+	<input type="button" value="Volver" class="boton" id="bo" onclick="ocultar3()">
+
+</div></center>
+
+</body>
+</html>

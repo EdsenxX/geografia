@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Baja California</title>
+	<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+	<link rel="shortcut icon" href="../imagenes/icono.png">
+	<link rel="stylesheet" type="text/css" href="../css/estados.css">
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+</head>
+
+<script type="text/javascript">
+
+		var cal = 0;
+		var uno = 1;
+
+		function ocultar(){
+			document.getElementById("ocu").style.display="none";
+			document.getElementById("exa").style.display="block"
+		}
+		function ocultar2(){
+			document.getElementById("exa").style.display="none";
+			document.getElementById("resul").style.display="block";
+		}
+		function mostrar(){
+			location.reload();
+		}
+		function ocultar3(){
+			document.getElementById("resul").style.display="none";
+			location.reload();
+		}
+		function rojo(){
+				document.getElementById("pres").style.background="red";
+				document.getElementById("2").style.background="green";
+				document.getElementById("1").onclick="";
+				document.getElementById("2").onclick="";
+		}
+		function verde(){
+				document.getElementById("pres").style.background="green";
+				cal++;
+				document.getElementById("1").onclick="";
+				document.getElementById("2").onclick="";
+		}
+		function rojo1(){
+				document.getElementById("press").style.background="red";
+				document.getElementById("22").style.background="green";
+				document.getElementById("11").onclick="";
+				document.getElementById("22").onclick="";
+		}
+		function verde1(){
+				document.getElementById("press").style.background="green";
+				cal++;
+				document.getElementById("11").onclick="";
+				document.getElementById("22").onclick="";
+		}
+		function rojo2(){
+				document.getElementById("presss").style.background="red";
+				document.getElementById("222").style.background="green";
+				document.getElementById("111").onclick="";
+				document.getElementById("222").onclick="";
+		}
+		function verde2(){
+				document.getElementById("presss").style.background="green";
+				cal++;
+				document.getElementById("111").onclick="";
+				document.getElementById("222").onclick="";
+		}
+		function rojo3(){
+				document.getElementById("pressss").style.background="red";
+				document.getElementById("2222").style.background="green";
+				document.getElementById("1111").onclick="";
+				document.getElementById("2222").onclick="";
+		}
+		function verde3(){
+				document.getElementById("pressss").style.background="green";
+				cal++;
+				document.getElementById("1111").onclick="";
+				document.getElementById("2222").onclick="";
+		}
+		function rojo4(){
+				document.getElementById("presssss").style.background="red";
+				document.getElementById("22222").style.background="green";
+				document.getElementById("11111").onclick="";
+				document.getElementById("22222").onclick="";
+		}
+		function verde4(){
+				document.getElementById("presssss").style.background="green";
+				cal++;
+				document.getElementById("11111").onclick="";
+				document.getElementById("22222").onclick="";
+		}
+
+</script>
+
+<body>
+
+
+<header>
+    <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../estados.html">Estados</a></li>
+    </ul>
+</header>
+
+
+<center><div class="con" id="ocu">
+	<h1>Baja California</h1>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3526020.4884653674!2d-117.77464558565093!3d30.340166090177178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d7700ca877ddd3%3A0xfca4fd9f0318de8e!2sBaja+California!5e0!3m2!1ses!2smx!4v1520525504137" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	<p>
+		Baja California es uno de los treinta y un estados que, junto con la Ciudad de México, forman los Estados Unidos Mexicanos. Su capital es Mexicali y su ciudad más poblada, Tijuana.<br><br>
+		Está ubicado en el extremo noroeste de la región noroeste del país, limitando al norte con Estados Unidos, al este con Sonora y el mar de Cortés o golfo de California, al sur con Baja California Sur y al oeste con el océano Pacífico. Fue fundado el 16 de enero de 1952.<br><br>
+		Se distingue de otros estados por un modelo económico y social que ha rendido frutos: 3.5% de su población en extrema pobreza, contra el 11% a nivel nacional y el 25% en muchos otros estados. Es el número 10 en competitividad, que se distingue por su apertura al mundo y una sociedad altamente participativa. Pero el que 110 mil personas todavía estén en extrema pobreza sigue siendo un reto.<br><br>
+		Se divide en 5 municipios. Su capital es Mexicali. Esta ciudad, junto con Tijuana y Ensenada, son las más pobladas del estado. Las dos primeras están ubicadas sobre la frontera con Estados Unidos. Otras localidades importantes son Tecate, La Rumorosa (municipio de Tecate), Rosarito (municipio de Playas de Rosarito), San Quintín (municipio de Ensenada), San Felipe, Ciudad Guadalupe Victoria, Ciudad Morelos, Los Algodones, Tecolotes, Batáquez (estas últimas en el municipio de Mexicali).
+	</p>
+	<input type="button" value="Tomar Examen" class="boton" id="bo" onclick="ocultar()">
+</div></center>
+
+<center><div class="examen" id="exa" style="display: none;">
+	<div class="pre" id="pres">
+		<p class="pregunta">1.- ¿Cuantos Municipios Tiene?</p>
+		<p class="re" id="1" onclick="rojo()">8</p>
+		<p class="re" id="1" onclick="rojo()">4</p>
+		<p class="re" id="2" onclick="verde()">5</p>
+		<p class="re" id="1" onclick="rojo()">6</p>
+	</div>
+
+	<div class="pre" id="press">
+		<p class="pregunta">2.- ¿Cual es su capital?</p>
+		<p class="re" id="11" onclick="rojo1()">Tecate</p>
+		<p class="re" id="11" onclick="rojo1()">Ensenada</p>
+		<p class="re" id="22" onclick="verde1()">Mexicali</p>
+		<p class="re" id="11" onclick="rojo1()">Tijuana</p>
+	</div>
+
+	<div class="pre" id="presss">
+		<p class="pregunta">3.- ¿Estado colindante al norte?</p>
+		<p class="re" id="111" onclick="rojo2()">Quintana Roo</p>
+		<p class="re" id="111" onclick="rojo2()">Colima</p>
+		<p class="re" id="111" onclick="rojo2()">Veracruz</p>
+		<p class="re" id="222" onclick="verde2()">Estados Unidos</p>
+	</div>
+
+	<div class="pre" id="pressss">
+		<p class="pregunta">4.- ¿Estado colindante al este?</p>
+		<p class="re" id="1111" onclick="rojo3()">Guatemala</p>
+		<p class="re" id="1111" onclick="rojo3()">Chihuahua</p>
+		<p class="re" id="2222" onclick="verde3()">Sonora</p>
+		<p class="re" id="1111" onclick="rojo3()">Oaxaca</p>
+	</div>
+
+	<div class="pre" id="presssss">
+		<p class="pregunta">5.- ¿Estado conlindante al norte?</p>
+		<p class="re" id="11111" onclick="rojo4()">Michoacan</p>
+		<p class="re" id="22222" onclick="verde4()">Zacatecas</p>
+		<p class="re" id="11111" onclick="rojo4()">CDMX</p>
+		<p class="re" id="11111" onclick="rojo4()">Veracruz</p>
+	</div>
+
+	<input type="button" value="Resultado" class="boton" id="bo" onclick="ocultar2()">
+	<input type="button" value="Cancelar" class="boton" id="bo" onclick="mostrar()">
+
+</div></center>
+
+<center><div class="resultado" id="resul" style="display: none;">
+	<h1>Calificación</h1>
+	<p class="g">Tu Calificación Es <script>document.write(cal)</script>/5</p>
+	<script>
+		if (cal==0){
+			document.write('<iframe src="https://giphy.com/embed/3o6wrvdHFbwBrUFenu" width="480" height="319" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>');
+		}else if (cal==5) {
+			document.write('<iframe src="https://giphy.com/embed/NXp9HM6YeuS0U" width="480" height="319" frameBorder="0" class="giphy-embed gif" allowFullScreen></iframe>');
+		}else if (cal==4) {
+			document.write('<iframe src="https://giphy.com/embed/10spcFioEOY7zG" width="480" height="319" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>')
+		}else if (cal==3) {
+			document.write('<iframe src="https://giphy.com/embed/DfdbTJZx6Yjra" width="480" height="319" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>')
+		}else if (cal==2) {
+			document.write('<iframe src="https://giphy.com/embed/TseBjMu53JgWc" width="473" height="319" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>')
+		}else if (cal==1) {
+			document.write('<iframe src="https://giphy.com/embed/ZebTmyvw85gnm" width="480" height="319" frameBorder="0" class="giphy-embed gif" allowFullScreen></iframe>')
+		}
+	</script>
+
+	<input type="button" value="Volver" class="boton" id="bo" onclick="ocultar3()">
+
+</div></center>
+
+</body>
+</html>
